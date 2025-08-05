@@ -62,3 +62,10 @@ Even though this project uses **unsigned uploads** (no secret keys), some best p
 - Limit upload types to images only
 - Use signed uploads for sensitive apps
 - Rate-limit or throttle client-side uploads if needed
+
+
+## ⚠️ Security Warning
+The `deleteImage` function in this project is **not secure** because it exposes the Cloudinary API secret in frontend code.  
+Anyone with access to your site could use it to delete any of your assets.  
+Use this only for local demos, project requirements, or internal tools.  
+For production, always move deletion logic to a secure backend.
