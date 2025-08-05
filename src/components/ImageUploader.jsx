@@ -10,7 +10,7 @@ const ImageUploader = ({ onUpload }) => {
 
     try {
       setUploading(true);
-      const result = await uploadImage(file, "yes");
+      const result = await uploadImage(file, "upload");
       onUpload(result); 
     } catch (err) {
       alert("Failed to upload: " + err.message);
