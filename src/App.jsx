@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import ImageUploader from "./components/ImageUploader";
 import ImageGallery from "./components/ImageGallery";
 
@@ -24,7 +25,7 @@ function App() {
         Image Uploader
       </h1>
       <ImageUploader onUpload={handleUpload} />
-      <ImageGallery images={images} />
+      <ImageGallery images={images} setImages={setImages}/>
     </div>
 
   );
